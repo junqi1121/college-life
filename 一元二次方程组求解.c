@@ -3,23 +3,23 @@
 int main()
 {
 	float a=0, b=0, c=0, derta=0;
-	printf("ÇëÊäÈë·½³ÌµÄ¶ş´ÎÏîÏµÊı£º\n");
-	scanf_s("%f",&a);
-	printf("ÇëÊäÈë·½³ÌµÄÒ»´ÎÏîÏµÊı£º\n");
-	scanf_s("%f",&b);
-	printf("ÇëÊäÈë·½³ÌµÄ³£ÊıÏî£º\n");
-	scanf_s("%f",&c);
+	printf("è¯·è¾“å…¥æ–¹ç¨‹çš„äºŒæ¬¡é¡¹ç³»æ•°ï¼š\n");
+	scanf("%f",&a);
+	printf("è¯·è¾“å…¥æ–¹ç¨‹çš„ä¸€æ¬¡é¡¹ç³»æ•°ï¼š\n");
+	scanf("%f",&b);
+	printf("è¯·è¾“å…¥æ–¹ç¨‹çš„å¸¸æ•°é¡¹ï¼š\n");
+	scanf("%f",&c);
 	derta = b * b - 4 * a * c;
 	if (derta < 0)
 	{
-		printf("¸Ã·½³ÌÎŞ½â!");
+		printf("è¯¥æ–¹ç¨‹æ— è§£!");
 	}
 	else
 	{
 		float x1, x2;
 		x1 = (-b+ sqrt(derta))/ (2*a);
 		x2 = (-b - sqrt(derta))/(2*a);
-		printf("¸Ã·½³ÌµÄÁ½¸ö¸ùÎªx1=%f , x2=%f",x1,x2);
+		printf("è¯¥æ–¹ç¨‹çš„ä¸¤ä¸ªæ ¹ä¸ºx1=%f , x2=%f",x1,x2);
 	}
 	return 0;
 }
