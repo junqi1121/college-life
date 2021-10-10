@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-/*牛顿方法计算正浮点数的平方根*/
+/*鐗涢】鏂规硶璁＄畻姝ｆ诞鐐规暟鐨勫钩鏂规牴*/
 #include<stdio.h>
 #include<math.h>
 int main()
@@ -12,11 +12,7 @@ int main()
 		z = x / y;
 		y = (y + z) / 2;
 
-	} while (fabs(y - z) > 0.00010);
-	/*for (y = 1; z=x/y;fabs(y-z)>0.000001)
-	{
-		y = (y + z) / 2;
-	}*/
+	} while (fabs(y - z) > 0.00010);/*姝ゅ鎺у埗绮惧害*/
 	printf("The number's square root is %lf",y);
 	return 0;
 }
