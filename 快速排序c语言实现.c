@@ -49,12 +49,13 @@ int main()
 {
 	int a[16] = { 12, 11, 17 ,8 ,19,7, 5, 1, 0, 10, 3, 18, 2, 14 ,6, 9};
 	printf("Before quicksort:\n");
-	for (int i = 0; i < 16; i++)
+	int i; 
+	for (i = 0; i < 16; i++)
 	printf("%d ", a[i]);
 	quicksort(a,0,sizeof(a)/sizeof(a[0]));
 	printf("\n");
 	printf("After quicksort:\n");
-	for(int i=0;i<16;i++)
+	for(i=0;i<16;i++)
 	printf("%d ", a[i]);
 	return 0;
 }
